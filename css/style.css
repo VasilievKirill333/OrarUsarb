@@ -169,7 +169,7 @@ input:checked + .slider:before {
 
 .group_name p{
   padding: 1px 15px;
-  color: #666;
+  color: #444;
 }
 
 #day-of-week{
@@ -177,7 +177,7 @@ input:checked + .slider:before {
   height: 40px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: #333;
+  color: #666;
   font-size: 16px;
 }
 
@@ -281,6 +281,7 @@ input:checked + .slider:before {
   color: white;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 .line1 p, .line2 p, .line3 p{
@@ -330,6 +331,7 @@ input:checked + .slider:before {
 }
 
 .info_bottom{
+  display: table-cell;
   background-color: #fff;
   width: 100%;
   height: 54px;
@@ -340,4 +342,87 @@ input:checked + .slider:before {
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   color: #32d296;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.container_right{
+  max-width: 744px;
+  box-sizing: content-box;
+  margin-left: 40px;
+}
+
+.container_right>*{
+  margin-top: 20px;
+}
+
+.logo{
+  display: flex;
+  width: 130px;
+  height: 97px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_right h2{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: white;
+  font-weight: 900;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0 !important;
+}
+
+.schedule-container {
+  margin-top: 0 !important;
+    display: grid;
+    grid-template-columns: 140px 565px;
+    grid-template-rows: repeat(7, auto);
+
+}
+
+.time-area {
+    background: #25975A;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    border: 1px solid white;
+}
+
+
+.class-details {
+    background: white;
+    padding: 10px;
+    color: #666;
+    border: 1px solid #cbcaca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+}
+
+
+.schedule-container .time-slot div,
+.schedule-container .class-details div {
+    font-size: 16px;
+    margin: 1.5px 0;
+}
+
+
+.schedule-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject, .aud{
+  font-weight: bold;
 }
